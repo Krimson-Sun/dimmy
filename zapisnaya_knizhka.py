@@ -1,6 +1,5 @@
-from PyQt5.QWidgets import QWidget, QApplication, QPushButton, QLabel, QLineEdit, QListWidget
+from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QLabel, QLineEdit, QListWidget
 import sys
-
 
 
 class Example(QWidget):
@@ -27,20 +26,19 @@ class Example(QWidget):
 
         self.name_input = QLineEdit(self)
         self.name_input.move(150, 30)
-        
+
         self.number_input = QLineEdit(self)
         self.number_input.move(150, 60)
-        
+
         self.memory = QListWidget(self)
-        
+        self.memory.setGeometry(0, 100, 500, 400)
+
     def add(self):
         self.memory.addItem(self.name_input.text() + ' ' + self.number_input.text())
-        
-        
-        
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Example()
     ex.show()
     sys.exit(app.exec())
-        
