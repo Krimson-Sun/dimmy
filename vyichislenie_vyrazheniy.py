@@ -14,7 +14,7 @@ class Example(QWidget):
 
         self.btn = QPushButton('Вычислить', self)
         self.btn.resize(self.btn.sizeHint())
-        self.btn.move(100, 150)
+        self.btn.move(150, 150)
         self.btn.clicked.connect(self.count)
 
         self.src_label = QLabel(self)
