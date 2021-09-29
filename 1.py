@@ -1,6 +1,5 @@
 class InvalidNumber(Exception):
-    def __init(self):
-        pass
+    pass
 
 
 num = input()
