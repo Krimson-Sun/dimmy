@@ -31,7 +31,7 @@ class Database:
     def add_info(self):
         pass
 
-
+hui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 class Teacher:
     def __init__(self):
         pass
